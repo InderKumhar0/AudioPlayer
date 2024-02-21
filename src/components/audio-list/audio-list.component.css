@@ -1,0 +1,36 @@
+.list {
+  width: 500px;
+  height: 500px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.audio {
+  display: flex;
+  justify-content: space-between;
+  max-width: 500px;
+  padding: 5px 10px;
+  color: azure;
+  margin: 10px;
+  background-color: rgba(46, 88, 128, 0.368);
+  border-radius: 13px;
+}
+
+.audio p {
+  width: 350px;
+  height: 22px;
+  overflow: hidden;
+}
+
+.audio button {
+  background: none;
+  border: none;
+  size: 100px;
+}
+
+.msg {
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
