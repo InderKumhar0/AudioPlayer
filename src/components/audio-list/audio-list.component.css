@@ -9,11 +9,12 @@
   display: flex;
   justify-content: space-between;
   max-width: 500px;
-  padding: 5px 10px;
+  padding: 1px 10px;
   color: azure;
   margin: 10px;
   background-color: rgba(46, 88, 128, 0.368);
   border-radius: 13px;
+  cursor: pointer;
 }
 
 .audio p {
@@ -30,6 +31,7 @@
 
 .msg {
   position: absolute;
+  color: white;
   top: 45%;
   left: 20%;
   transform: translate(-50%, -50%);

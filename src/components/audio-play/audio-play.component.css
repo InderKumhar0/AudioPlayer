@@ -1,6 +1,11 @@
 .music-player {
   text-align: center;
-  margin: 20px;
+  margin: 20px 20px 0px 20px;
+}
+
+.music-player p {
+  background-color: red;
+  margin-bottom: 30px;
 }
 
 .controls {
@@ -30,4 +35,10 @@ button {
 
 #audiod {
   display: none;
+}
+
+.current-playing {
+  color: white;
+  margin: 15px;
+  height: 25px;
 }

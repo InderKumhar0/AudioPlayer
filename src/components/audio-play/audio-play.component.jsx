@@ -10,11 +10,14 @@ const AudioPlayer = () => {
   const [progress, setProgress] = useState(0);
   const audioRef = useRef(null);
 
+  const currentaudio = playlist[localStorage.getItem('lastIndex')]?.data;
+
   useEffect(() => {
     const playAudio = async () => {
       if (nowPlayingIndex !== null) {
         try {
           const audioFile = playlist[nowPlayingIndex].data;
+          console.log(audioFile);
           const src = URL.createObjectURL(audioFile);
 
           audioRef.current.src = src;
@@ -90,6 +93,7 @@ const AudioPlayer = () => {
     <div className="music-player">
       {
         <>
+          <div className="current-playing">{currentaudio ? `now playing : ${currentaudio?.name}` : ' '}</div>
           <audio id="audiod" ref={audioRef} controls autoPlay />
           <div className="progress-container">
             <div

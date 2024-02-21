@@ -3,10 +3,9 @@
 }
 
 body {
-  background-color: rgb(144, 195, 215);
+  /* background-color: rgb(144, 195, 215); */
+  background-image: url('./assets/music-background.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: 30px;
 }
-
-
-
-

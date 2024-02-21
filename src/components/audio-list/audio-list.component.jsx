@@ -3,15 +3,18 @@ import { AudioContext } from "../../context/audio-context";
 import { useContext } from "react";
 
 const AudioList = () => {
-  const { playlist, setNowPlayingIndex } =
-    useContext(AudioContext);
+  const { playlist, setNowPlayingIndex } = useContext(AudioContext);
 
   return (
     <div className="list">
       {playlist.length > 0 ? (
         playlist.map((audio, index) => (
-          <div className="audio" key={index}>
-            <p onClick={() => setNowPlayingIndex(index)}>{audio.data.name}</p>
+          <div
+            className="audio"
+            key={index}
+            onClick={() => setNowPlayingIndex(index)}
+          >
+            <p>{audio.data.name}</p>
           </div>
         ))
       ) : (
